@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>settingsIcon.png</file>
+        <file>homeIcon.png</file>
+        <file>refreshIcon.png</file>
+        <file>plusIcon.png</file>
+        <file>icons/bch-25.png</file>
+        <file>icons/bnb-25.png</file>
+        <file>icons/bsv-25.png</file>
+        <file>icons/btc-25.png</file>
+        <file>icons/eos-25.png</file>
+        <file>icons/eth-25.png</file>
+        <file>icons/ltc-25.png</file>
+        <file>icons/ripple-25.png</file>
+        <file>icons/usdt-25.png</file>
+        <file>icons/xtz-25.png</file>
+    </qresource>
+</RCC>

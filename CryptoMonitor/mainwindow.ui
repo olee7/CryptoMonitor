@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>914</width>
+    <height>1494</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="pricesLayout">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_header">
+        <item>
+         <widget class="QPushButton" name="settings">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="asset/images.qrc">
+            <normaloff>:/images/settingsIcon.png</normaloff>:/images/settingsIcon.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="asset/images.qrc">
+            <normaloff>:/images/refreshIcon.png</normaloff>:/images/refreshIcon.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">QLabel#label {
+	font-size: 20px;
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>CryptoMonitor</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="asset/images.qrc">
+            <normaloff>:/images/plusIcon.png</normaloff>:/images/plusIcon.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_btc">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="btcIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/btc-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="btcSymbol">
+          <property name="text">
+           <string>BTC</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="btcName">
+          <property name="text">
+           <string>Bitcoin</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="btcPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_eth">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="ethIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/eth-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ethSymbol">
+          <property name="text">
+           <string>ETH</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ethName">
+          <property name="text">
+           <string>Ethereum</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ethPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_xrp">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="xrpIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/ripple-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="xrpSymbol">
+          <property name="text">
+           <string>XRP</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="xrpName">
+          <property name="text">
+           <string>Ripple</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="xrpPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_bch">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="bchIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/bch-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bchSymbol">
+          <property name="text">
+           <string>BCH</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bchName">
+          <property name="text">
+           <string>Bitcoin Cash</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bchPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_bsv">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="bsvIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/bsv-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bsvSymbol">
+          <property name="text">
+           <string>BSV</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bsvName">
+          <property name="text">
+           <string>Bitcoin SV</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bsvPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_ltc">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="ltcIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/ltc-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ltcSymbol">
+          <property name="text">
+           <string>LTC</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ltcName">
+          <property name="text">
+           <string>Litecoin</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ltcPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_usdt">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="usdtIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/usdt-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="usdtSymbol">
+          <property name="text">
+           <string>USDT</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="usdtName">
+          <property name="text">
+           <string>Tether</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="usdtPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_eos">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="eosIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/eos-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="eosSymbol">
+          <property name="text">
+           <string>EOS</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="eosName">
+          <property name="text">
+           <string>EOS</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="eosPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_bnb">
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="bnbIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/bnb-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bnbSymbol">
+          <property name="text">
+           <string>BNB</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bnbName">
+          <property name="text">
+           <string>Binance Coin</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bnbPrice">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_xtz">
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="xtzIcon">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="asset/images.qrc">:/images/icons/xtz-25.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="xtzSymbol">
+          <property name="text">
+           <string>XTZ</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="xtzName">
+          <property name="text">
+           <string>Tezos</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="xtzPrice">
+          <property name="text">
+           <string>price</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="asset/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
